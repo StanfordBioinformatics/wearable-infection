@@ -507,7 +507,7 @@ else:
 
 
 
-#################################  4 Plot  #################################
+#################################  Plot  #################################
 print("Plotting...")
 
 figure = plt.gcf()
@@ -659,5 +659,5 @@ if (len(date_hr_avgs_dic.keys())>1):
     figure = plt.gcf()
     figure.set_size_inches(16, 2.5)
 
-    plt.savefig("NightSignalResult" +'.pDF', dpi=300, bbox_inches = "tight")
+    plt.savefig("NightSignalResult" +'.pdf', dpi=300, bbox_inches = "tight")
     plt.close()
