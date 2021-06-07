@@ -8,23 +8,27 @@ Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables da
 
 **Required packages:**
 
-Use the following command to install the required Python packages
+  Use the following command to install the required Python packages
 
-```pip install -r requirements.txt```
+  ```pip install -r requirements.txt```
 
+<br/>
+<br/>
 
 **Command:**
 
-For each wearable, use the following command to run NightSignal algorithm on heartrate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finitee Automata (DFA).    
+  For each wearable, use the following command to run NightSignal algorithm on heartrate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finitee Automata (DFA).    
 
-Fitbit:
+> Fitbit:
 
-``` python3 nightsignal.py --device=Fitbit --restinghr=<RHR_FILE> ```
+> ``` python3 nightsignal.py --device=Fitbit --restinghr=<RHR_FILE> ```
 
-AppleWatch:
+> AppleWatch:
 
-``` python3 nightsignal.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
+> ``` python3 nightsignal.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
+<br/>
+<br/>
 
 **Examples:**
 
@@ -32,3 +36,9 @@ AppleWatch:
 
 `python3 nighsignal.py --device=Fitbit --restinghr=P682517-Fitbit-rhr.csv`
 
+<br/>
+<br/>
+
+**Output:**
+
+<img src="images/sample_output.png" width="400" height="250">
