@@ -6,7 +6,16 @@ Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables da
 
 ## Usage
 
+**Required packages:**
+
+Use the following command to install the required Python packages
+
+```pip install -r requirements.txt```
+
+
 **Command:**
+
+For each wearable, use the following command to run NightSignal algorithm on heartrate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finitee Automata (DFA).    
 
 Fitbit:
 
