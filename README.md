@@ -14,3 +14,10 @@ Fitbit:
 AppleWatch:
 ``` python3 nightsignal.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
+
+**Examples:**
+
+`python3 nighsignal.py --device=AppleWatch --heartrate=P355472-AppleWatch-hr.csv  --step=P355472-AppleWatch-st.csv`
+
+`python3 nighsignal.py --device=Fitbit --restinghr=P682517-Fitbit-rhr.csv`
+
