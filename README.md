@@ -9,9 +9,11 @@ Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables da
 **Command:**
 
 Fitbit:
+
 ``` python3 nightsignal.py --device=Fitbit --restinghr=<RHR_FILE> ```
 
 AppleWatch:
+
 ``` python3 nightsignal.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
 
