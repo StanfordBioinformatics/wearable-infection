@@ -46,4 +46,4 @@ Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables da
 
 Pre-symptoms Real-time Alerts for COVID-19  
 
-<img src="images/sample_output.png" width="180" height="200">
+<img src="images/sample_output.png" width="120" height="200">
