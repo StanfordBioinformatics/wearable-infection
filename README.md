@@ -8,18 +8,24 @@ Real-time detection of infection diseases using wearables
 # NightSignal Algorithm:
 Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables data. The current version of NightSignal algorithm works on Fitbit and AppleWatch heartrate and steps data.
 
-## Usage
+## Requirements and Usage
 
-**Required packages:**
+**Requirements:**
+- Python 3
+- MatplotLib
+- NumPy
+- Pandas
 
-  Use the following command to install the required Python packages
+**Required packages command:**
+
+Use the following command to install the required Python packages
 
   ```pip install -r requirements.txt```
 
 <br/>
 <br/>
 
-**Command:**
+**Usage:**
 
   For each wearable, use the following command to run NightSignal algorithm on heartrate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finite Automata (DFA).    
 
