@@ -36,15 +36,15 @@ Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables da
 
 **Example runs:**
 
-`python3 nighsignal.py --device=AppleWatch --heartrate=P355472-AppleWatch-hr.csv  --step=P355472-AppleWatch-st.csv`
+`python3 nightsignal.py --device=AppleWatch --heartrate=P355472-AppleWatch-hr.csv  --step=P355472-AppleWatch-st.csv`
 
-`python3 nighsignal.py --device=Fitbit --restinghr=P682517-Fitbit-rhr.csv`
+`python3 nightsignal.py --device=Fitbit --restinghr=P682517-Fitbit-rhr.csv`
 
 <br/>
 <br/>
 
 **Output example:**
 
-Pre-symptoms Real-time Alerts for COVID-19  
+Example of Pre-symptoms Real-time Alerts during COVID-19:  
 
 <img src="images/sample_output.png" width="400" height="250">
