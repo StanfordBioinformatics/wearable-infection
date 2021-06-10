@@ -3,7 +3,7 @@ Real-time detection of infection diseases using wearables
 
 
 
-<img src="images/NightSignal_Icon.png" width="200" height="200">
+<img src="images/NightSignal_Icon.png" width="341" height="326">
 
 # NightSignal Algorithm:
 Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables data. The current version of NightSignal algorithm works on Fitbit and AppleWatch heartrate and steps data.
