@@ -110,7 +110,7 @@ Below is the corresponding alert file for the above example:
 ...
 
 
-Finally, the above de-identified file is transfered to [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app and after re-identifying the dates to actual dates on the phone, alerts are represented in a calendar base visualization on [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app:
+Finally, the above de-identified file is transfered to [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app and after re-identifying the dates to actual dates on the phone, alerts are represented in a calendar base visualization on [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app. Then users can annotate the alerts via different surveys (e.g., activities, symptoms, diagnosis, medication, vaccination).
 
 
 <img src="images/Alerts_On_MyPHD.png" width="450" height="250">
