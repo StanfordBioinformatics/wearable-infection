@@ -32,13 +32,14 @@ After the healthy baseline is established, the alerts are generated using the fo
 - NumPy
 - Pandas
 
+<br/>
+
 **Required packages command:**
 
 Use the following command to install the required Python packages
 
   ```pip install -r requirements.txt```
 
-<br/>
 <br/>
 
 **Usage:**
@@ -54,7 +55,6 @@ Use the following command to install the required Python packages
 > ``` python3 nightsignal.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
 <br/>
-<br/>
 
 **Example runs:**
 
@@ -63,14 +63,12 @@ Use the following command to install the required Python packages
 `python3 nightsignal.py --device=Fitbit --restinghr=P682517-Fitbit-rhr.csv`
 
 <br/>
-<br/>
 
 **Output example:**
 
 Example of Pre-symptoms Real-time Alerts during COVID-19:  
 
 <img src="images/sample_output.png" width="400" height="250">
-
 
 Below is the corresponding alert file for the above example:
 
@@ -111,6 +109,5 @@ Below is the corresponding alert file for the above example:
 
 
 Finally, the above de-identified file is transfered to [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app and after re-identifying the dates to actual dates on the phone, alerts are represented in a calendar base visualization on [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app. Then users can annotate the alerts via different surveys (e.g., activities, symptoms, diagnosis, medication, vaccination).
-
 
 <img src="images/Alerts_On_MyPHD.png" width="500" height="280">
