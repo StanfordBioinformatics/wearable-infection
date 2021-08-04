@@ -22,7 +22,7 @@ The healthy basline for each indivicdual is calculated as the median of average 
 After the healthy baseline is established, the alerts are generated using the following deterministic finite state machine:
 
 
-<img src="images/NightSignal_DFA.png" width="355" height="320">
+<img src="images/NightSignal_DFA.png" width="455" height="420">
 
 ## Requirements and Usage
 
@@ -113,4 +113,4 @@ Below is the corresponding alert file for the above example:
 Finally, the above de-identified file is transfered to [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app and after re-identifying the dates to actual dates on the phone, alerts are represented in a calendar base visualization on [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app. Then users can annotate the alerts via different surveys (e.g., activities, symptoms, diagnosis, medication, vaccination).
 
 
-<img src="images/Alerts_On_MyPHD.png" width="450" height="250">
+<img src="images/Alerts_On_MyPHD.png" width="500" height="280">
