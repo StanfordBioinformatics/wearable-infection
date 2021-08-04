@@ -6,7 +6,17 @@ Real-time detection of infection diseases using wearables
 <img src="images/NightSignal_Icon.png" width="272.8" height="262.4">
 
 # NightSignal Algorithm:
-Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables data. The current version of NightSignal algorithm works on Fitbit and AppleWatch heartrate and steps data.
+Online pre-symptomatic and asymptomatic detection of COVID-19 using wearables data. The current version of NightSignal algorithm works on Fitbit and AppleWatch heart rate and steps data.
+
+**Preprocessing:**
+Given the heart rate and step data (e.g., P355472-AppleWatch-hr.csv and P355472-AppleWatch-st.csv files), the resting heart rate (RHR) overnight is calculated for each day by averaging the heart rate values where the corresponding step value is zero (i.e. minute resolution in the case of Fitbit and various ranges - e.g., 5 or 15 minutes - in the case of Apple Watch). 
+
+**Healthy baseline:**
+The healthy basline for each indivicdual is calculated as the median of average RHR overnight.
+
+**Generating alerts:**
+After the healthy baseline is established, the alerts are generated using the following deterministic finite state machine:
+
 
 ## Requirements and Usage
 
@@ -27,7 +37,7 @@ Use the following command to install the required Python packages
 
 **Usage:**
 
-  For each wearable, use the following command to run NightSignal algorithm on heartrate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finite Automata (DFA).    
+  For each wearable, use the following command to run NightSignal algorithm on heart rate and step data. The outputs are: 1) A JSON file for the real-time alerts and 2) A plot showing the average RHR overnight and corresponding healthy baseline and alerts w.r.t the NightSignal Deterministic Finite Automata (DFA).    
 
 > Fitbit:
 
