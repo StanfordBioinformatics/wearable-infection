@@ -80,7 +80,7 @@ for current_argument, current_value in arguments:
         restinghr_file = current_value
 
 
-#nightsignal configs
+###nightsignal configs
 medianConfig = "MedianOfAvgs" # MedianOfAvgs | AbsoluteMedian
 yellow_threshold = 3
 red_threshold = 4
@@ -106,7 +106,7 @@ if(device=="Fitbit"):
                 else:
                     date_hrs_dic[rec_date] = date_hrs_dic[rec_date] + "*" + rec_hr
     
-    #Calculate AVGs , Imputation, Healthy baseline Median, and Alerts
+    ###Calculate AVGs , Imputation, Healthy baseline Median, and Alerts
     date_hr_avgs_dic = {}
     for key in date_hrs_dic:
         AVGHR = 0
@@ -207,7 +207,8 @@ if(device=="Fitbit"):
                     out_file.write(key + "\n")
         
 
-    #red alerts
+    ###Red alerts (red states in NightSignal deterministic finite state machine)
+    ###If for two consecutive nights, average RHR is above the red_threshold based on the median of average RHR overnight, then a red alert is triggered
     red_alert_dates = []
     dates_array = []
     try:
@@ -230,7 +231,8 @@ if(device=="Fitbit"):
         print("no red file")
 
 
-    #yellow alerts
+    ###Yellow alerts (yellow states in NightSignal deterministic finite state machine)
+    ###If for two consecutive nights, average RHR is above the yellow_threshold, but not above the red_threshold, based on the median of average RHR overnight, then a yellow alert is triggered
     yellow_alert_dates = []
     dates_array = []
     try:
@@ -258,7 +260,11 @@ if(device=="Fitbit"):
     os.system("rm potenital_reds.csv")
     os.system("rm potenital_yellows.csv")
 
-    #Populate signal file
+    
+    ###Generating alerts file
+    ### 0 indicates green alert
+    ### 1 indicates yellow alert 
+    ### 2 indicates red alert
     alerts = {}
     alerts['nightsignal'] = []
     red_alerted = []
@@ -284,7 +290,7 @@ if(device=="Fitbit"):
 
 else:
 
-    #Preprocess to get resting heartrate
+    ###Preprocess to get resting heartrate
     delta = datetime.timedelta(minutes=1)
 
     dateTimes = {}
@@ -340,7 +346,7 @@ else:
                 else:
                     date_hrs_dic[rec_date] = date_hrs_dic[rec_date] + "*" + rec_hr
 
-    #Calculate AVGs , Imputation, Healthy baseline Median, and Alerts
+    ###Calculate AVGs , Imputation, Healthy baseline Median, and Alerts
     date_hr_avgs_dic = {}
     for key in date_hrs_dic:
         AVGHR = 0
@@ -434,7 +440,8 @@ else:
                 with open("potenital_yellows.csv" , "a") as out_file:
                     out_file.write(key + "\n")
 
-    #red alerts
+    ###Red alerts (red states in NightSignal deterministic finite state machine)
+    ###If for two consecutive nights, average RHR is above the red_threshold based on the median of average RHR overnight, then a red alert is triggered
     red_alert_dates = []
     dates_array = []
     try:
@@ -457,7 +464,8 @@ else:
         print("no red file")
 
 
-    #yellow alerts
+    ###Yellow alerts (yellow states in NightSignal deterministic finite state machine)
+    ###If for two consecutive nights, average RHR is above the yellow_threshold, but not above the red_threshold, based on the median of average RHR overnight, then a yellow alert is triggered
     yellow_alert_dates = []
     dates_array = []
     try:
@@ -484,7 +492,10 @@ else:
     os.system("rm potenital_reds.csv" )
     os.system("rm potenital_yellows.csv" )
 
-    #Populate signal file
+    ###Generating alerts file
+    ### 0 indicates green alert
+    ### 1 indicates yellow alert 
+    ### 2 indicates red alert 
     alerts = {}
     alerts['nightsignal'] = []
     red_alerted = []
