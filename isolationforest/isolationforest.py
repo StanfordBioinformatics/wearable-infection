@@ -31,7 +31,7 @@ restinghr_file = ""
 device = ""
 for current_argument, current_value in arguments:
     if current_argument in ("-h", "--help") :
-        print ("Please use: python3 isolationforest.py --device=Fitbit --restinghr=<RHR_FILE> || python3 isolationforest.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ")
+        print ("Please use: python3 isolationforest.py --device=Fitbit  --heartrate=<HR_FILE> --step=<STEP_FILE> || python3 isolationforest.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ")
     elif current_argument in ("--heartrate"):
         heartrate_file = current_value
     elif current_argument in ("--step"):
