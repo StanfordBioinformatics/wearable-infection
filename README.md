@@ -111,3 +111,18 @@ Below is the corresponding alert file for the above example:
 Finally, the above de-identified file is transfered to [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app and after re-identifying the dates to actual dates on the phone, alerts are represented in a calendar base visualization on [MyPHD](https://apps.apple.com/us/app/myphd/id1447333214) app. Then users can annotate the alerts via different surveys (e.g., activities, symptoms, diagnosis, medication, vaccination).
 
 <img src="images/Alerts_On_MyPHD.png" width="500" height="280">
+
+
+# IsolationForest Algorithm:
+
+A version of Isolation Forest Anomaly Detection algorithm can be found in `isolationforest` folder. To apply this algorithm, please run the follwoing command line:
+
+> Fitbit:
+
+> ``` python3 isolationforest.py --device=Fitbit  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
+
+> AppleWatch:
+
+> ``` python3 isolationforest.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
+
+Results can be found in the output file, `if_anomalies.csv`. 
