@@ -1,6 +1,6 @@
 # IsolationForest Algorithm:
 
-A version of Isolation Forest Anomaly Detection algorithm can be found in `isolationforest` folder. To apply this algorithm, please run the follwoing command line:
+A version of Isolation Forest Anomaly Detection algorithm for Fitbit and Apple Watch data. To apply this algorithm, you can easily run the follwoing command line:
 
 > Fitbit:
 
@@ -10,6 +10,6 @@ A version of Isolation Forest Anomaly Detection algorithm can be found in `isola
 
 > ``` python3 isolationforest.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
-Similar to NightSignal algorithm, the RHRs are resampled by daily average (24h) resolution. 
-The contamination factor is set to "auto" by default. 
+Similar to <b>NightSignal</b> algorithm, the resting heart rate overnight are resampled by daily average (24h) resolution. 
+The contamination factor is set to "auto" by default and can be customized. 
 Finally, the result (alerts) can be found in the output file: `if_anomalies.csv`. Points labeled with "yes" are anomalies. 
