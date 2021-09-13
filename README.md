@@ -115,7 +115,7 @@ Finally, the above de-identified file is transfered to [MyPHD](https://apps.appl
 
 # IsolationForest Algorithm:
 
-A version of Isolation Forest Anomaly Detection algorithm can be found in `isolationforest` folder. To apply this algorithm, please run the follwoing command line:
+A version of Isolation Forest Anomaly Detection algorithm for Fitbit and Apple Watch data can be found in `isolationforest` folder. To apply this algorithm, please run the follwoing command line:
 
 > Fitbit:
 
