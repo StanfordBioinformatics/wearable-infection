@@ -84,7 +84,7 @@ if(device=="Fitbit"):
     
 
 
-###### AppleWatch Night
+###### AppleWatch
 if(device=="AppleWatch"):
     delta = datetime.timedelta(minutes=1)
     dateTimes = {}
