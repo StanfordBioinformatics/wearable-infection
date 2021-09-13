@@ -10,8 +10,8 @@ Isolation Forest Anomaly Detection algorithm for wearables data: Fitbit and Appl
 
 > ``` python3 isolationforest.py --device=AppleWatch  --heartrate=<HR_FILE> --step=<STEP_FILE> ```
 
-Similar to <b>NightSignal</b> algorithm, the resting heart rate overnight are resampled by daily average (24h) resolution.
+Similar to <b>NightSignal</b> algorithm, the resting heart rate overnight data is resampled by daily average (24h) resolution.
 
-The contamination factor is set to "auto" by default and can be customized.
+The contamination factor is set to "auto" by default and can be customized (e.g., 0.095).
 
 Finally, the result (alerts) is generated in the output file: `if_anomalies.csv`. Points labeled with "yes" are anomalies. 
