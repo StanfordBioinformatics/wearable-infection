@@ -1,9 +1,13 @@
 # IsolationForest Algorithm:
 
-<img src="../images/IsolationForest_Icon.png" width="372.8" height="304.84">
+<img src="../images/IsolationForest_Icon.png" width="326.2" height="266.73">
 
+</br>
+</br>
 
-Isolation Forest Anomaly Detection algorithm for wearables data: Fitbit and Apple Watch. To run this algorithm, you can easily run the follwoing command line:
+Isolation Forest Anomaly Detection algorithm for wearables data: Fitbit and Apple Watch. 
+
+To run this algorithm, you can easily run the follwoing command line:
 
 > Fitbit:
 
